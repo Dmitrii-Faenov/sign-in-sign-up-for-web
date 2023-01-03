@@ -17,26 +17,32 @@
         </div>
         <div class="form-block">
             <div class="form-block__container">
-                <div class="header form-block__header">
+                <header class="header form-block__header">
                     <a class="header__back-link" href="#">Back</a>
                     <p class="header__sign-up">I have an account! <a class="header__sign-up-link" href="#">Sign Up</a></p>
-                </div>
-                <!-- Make better classes -->
+                </header>
                 <form class="form form-block__form" action="#" method="post"> 
                     <h1 class="form__title">Create your Account</h1>
                     <div class="form__alt-auth-container">
-                        <a href="" class="form__alt-auth-google">Sign In with Google Account</a>
-                        <a href="" class="form__alt-auth-facebook">Sign In with Facebook</a>
+                        <a class="form__alt-auth-google" href="#">Sign In with Google Account</a>
+                        <a class="form__alt-auth-facebook" href="#">Sign In with Facebook</a>
                     </div>
                     <p class="form__sign-in-suggestion">Or sign in with login and password</p>
                     <div class="form__all-inputs-container">
                         <div class="form__input-container">
                             <label class="form__input-label" for="login">Email address or username</label>
-                            <input class="form__input form__input_login" type="text" name="login" id="login" placeholder="Type here">
+                            <div class="form__input-wrapper">
+                                <img class="form__input-icon form__input-icon_user" src="images/user-icon.svg" alt="User icon">
+                                <input class="form__input form__input_login" type="text" name="login" id="login" placeholder="Type here">
+                            </div>
                         </div>
                         <div class="form__input-container">
                             <label class="form__input-label" for="password">Password</label>
-                            <input class="form__input form__input_password" type="password" name="password" id="password" placeholder="*****************">
+                            <div class="form__input-wrapper">
+                                <img class="form__input-icon form__input-icon_lock form__input-icon_lock" src="images/lock-icon.svg" alt="Lock icon">
+                                <input class="form__input form__input_password" type="password" name="password" id="password" placeholder="*****************">
+                                <img class="form__input-icon form__input-icon_show-hide-password" src="images/eye-slash-icon.svg" alt="Eye slash icon">
+                            </div>
                         </div>
                     </div>
                     <div class="form__remember-me-forgot-password-container">
@@ -46,7 +52,8 @@
                         </div>
                         <a class="form__forgot-password" href="#">Forgot password?</a>
                     </div>
-                    <input class="form__btn" type="button" value="Sign In">
+                    <button class="form__btn" type="submit">Sign In</button>
+                    <footer class="form__footer"></footer>
                 </form>
             </div>
         </div>
