@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In & Sign Up</title>
+    <title>Sign In & Sign Up for web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page">
-        <div class="cover">
-            <p class="cover__title">Welcome back!</p>
-            <img class="cover__image" src="images/login.png" alt="3D model of Sign In / Sign Up form" width="681" height="681">
+        <div class="cover-block">
+            <div class="cover-block__container">
+                <p class="cover-block__title">Welcome back!</p>
+                <img class="cover-block__img" src="images/login.png" alt="3D model of Sign In & Sign Up form" width="681" height="681">
+            </div>
         </div>
-        <div class="content">
-            <div class="content__container">
-                <div class="header content__header">
-                    <a class="header__back-link" href="#">
-                        <img class="header__arrow" src="images/arrow-circle-left.svg" alt="Arrow circle left">
-                        <p class="header__back-text">Back</p>
-                    </a>
-                    <div class="header__reg-container">
-                        <p class="header__reg-text">I don't have an accoutn! <a class="header__reg-link" href="#">Sign Up</a></p>
+        <div class="form-block">
+            <div class="form-block__container">
+                <header class="header form-block__header">
+                    <a class="header__back-link" href="#">Back</a>
+                    <p class="header__sign-up">I have an account! <a class="header__sign-up-link" href="#">Sign Up</a></p>
+                </header>
+                <form class="form form-block__form" action="#" method="post"> 
+                    <h1 class="form__title">Create your Account</h1>
+                    <div class="form__alt-auth-container">
+                        <a class="form__alt-auth-google" href="#">Sign In with Google Account</a>
+                        <a class="form__alt-auth-facebook" href="#">Sign In with Facebook</a>
                     </div>
-                </div>
-                <div class="main content__main">
-                    <h1 class="main__title">Sign In</h1>
-                    <div class="main__alt-auth-links-container">
-                        <a class="main__google-auth-link" href="#">Sign In with Google Account</a>
-                        <a class="main__facebook-auth-link" href="#">Sign In with Facebook</a>
+                    <p class="form__sign-in-suggestion">Or sign in with login and password</p>
+                    <div class="form__all-inputs-container">
+                        <div class="form__input-container">
+                            <label class="form__input-label" for="login">Email address or username</label>
+                            <div class="form__input-wrapper">
+                                <img class="form__input-icon form__input-icon_user" src="images/user-icon.svg" alt="User icon">
+                                <input class="form__input form__input_login" type="text" name="login" id="login" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="form__input-container">
+                            <label class="form__input-label" for="password">Password</label>
+                            <div class="form__input-wrapper">
+                                <img class="form__input-icon form__input-icon_lock form__input-icon_lock" src="images/lock-icon.svg" alt="Lock icon">
+                                <input class="form__input form__input_password" type="password" name="password" id="password" placeholder="*****************">
+                                <img class="form__input-icon form__input-icon_show-hide-password" src="images/eye-slash-icon.svg" alt="Eye slash icon">
+                            </div>
+                        </div>
                     </div>
-                        <p class="main__alt-auth-text">Or sign in with login and password</p>
-                    <form class="form main__form" method="post" action="#">
-                        <label class="form__label" for="login">Email address or username</label>
-                        <input class="form__input" type="text" name="login" id="login">
-                        <label class="form__label" for="password">Password</label>
-                        <input class="form__input" type="password" name="password" id="password">
-                        <input class="form__input" type="checkbox" name="remember-me" id="remember-me">
-                        <label class="form__label" for="remember-me">Remember me</label>
+                    <div class="form__remember-me-forgot-password-container">
+                        <div class="form__checkbox-container">
+                            <input class="form__checkbox" type="checkbox" name="remember-me" id="remember-me">
+                            <label class="form__checkbox-label" for="remember-me">Remember me</label>
+                        </div>
                         <a class="form__forgot-password" href="#">Forgot password?</a>
-                        <input class="form__submit" type="submit" value="Sign In">
-                    </form>
-                </div>
+                    </div>
+                    <button class="form__btn" type="submit">Sign In</button>
+                    <footer class="form__footer"></footer>
+                </form>
             </div>
         </div>
     </div>
